@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+    color: white;
+}
+
+@keyframes rotation{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@font-face {
+    font-family: poppins;
+    src: url('Poppins-Regular.ttf');
+}
+body{
+    overflow-x: hidden;
+}
+main{
+    width: 27%;
+    /* background-color: #152238; */
+    background-color: rgb(188,224,248);
+    height: 100vh;
+    margin: auto;
+    padding: 15px;
+    display : none ;
+    overflow-x: hidden;
+
+}
+
+.loading{
+    text-align: center;
+    padding-top: 30vh;
+    padding-left: 40%;
+
+}
+.sun-animation{
+    animation: rotation 1s linear infinite;
+
+}
+
+.first-part{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+    /* we have added center bcz the default value is stretch and its  gonna make some problems with the animation */
+}
+
+.first-part i{
+    font-size: 2.5rem;
+    color: rgb(189,161,51);
+}
+
+p{
+    font-size: 0.7rem;
+}
+
+.second-part,.third-part,.fourth-part{
+    background-color: rgb(205,230,250);
+    width: 100%;
+}
+
+.second-part{
+    display: flex;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    overflow-x: auto;
+    min-width: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+
+}
+
+.hourlyIcon{
+    width: 30px;
+}
+.DailyMidNightCondition,.DailyMidDayCondition{
+    width : 24px
+}
+
+.second-part div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 0.7rem;
+    margin-right: 20px;
+}
+
+.second-part span,i{
+    margin-bottom: 10px;
+}
+
+.fa-sun,.fa-moon{
+    color: rgb(189,161,51);
+}
+
+.third-part{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    font-size: 0.7rem;
+    margin-bottom: 20px;
+}
+
+.third-part div{
+    display: flex;
+    flex-direction: column;
+}
+
+.third-part div:first-child span,.third-part div:nth-child(5) span,.third-part div:last-child span{
+    margin-bottom: 6.5px;
+}
+
+.third-part div:nth-child(3) i,.third-part div:nth-child(4) i{
+    margin-bottom: 13.5px;
+}
+
+.fourth-part{
+    display: flex;
+    font-size: 0.7rem;
+    position: relative;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.fourth-part div{
+    display: flex;
+    flex-direction: column;
+}
+
+.fourth-part div .fa-sun{
+    font-size: 3rem;
+}
+
+.fa-droplet{
+    font-size: 0.6rem;
+}
+
+.fourth-part div .fa-arrow-up,.fourth-part div .fa-arrow-down{
+    font-size: 2rem;
+    position: absolute;
+    bottom: -10px;
+}
+
+.fourth-part div .fa-arrow-down{
+    right: 67px ;
+}
+
+.fourth-part div .fa-arrow-up{
+    left : 67px;
+}
