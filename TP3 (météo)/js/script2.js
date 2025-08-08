@@ -39,7 +39,7 @@ function fetchOpenMeteoApi(latitude,longitude) {
 
 //     const xhr = new XMLHttpRequest() ;
 
-//     xhr.open('GET',`http://api.weatherapi.com/v1/current.json?key=586d1ffa09ce4288863171059252402&q=${latitude},${longitude}&days=5&hour=17&days=3`);
+//     xhr.open('GET',`http://api.weatherapi.com/v1/current.json?key=api_key&q=${latitude},${longitude}&days=5&hour=17&days=3`);
 
 //     xhr.onload = function() {
 //         console.log(xhr.response);
