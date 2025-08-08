@@ -47,7 +47,7 @@ function getDayName(dateString) {
 
      const xhr = new XMLHttpRequest() ;
 
-     xhr.open('GET',`http://api.weatherapi.com/v1/forecast.json?key=586d1ffa09ce4288863171059252402&q=${latitude},${longitude}&days=7&hourly=1&daily=1&elements=humidity`);
+     xhr.open('GET',`http://api.weatherapi.com/v1/forecast.json?key=api_key?q=${latitude},${longitude}&days=7&hourly=1&daily=1&elements=humidity`);
 
      xhr.onload = function() {
          console.log(xhr.response);
